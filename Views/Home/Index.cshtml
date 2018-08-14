@@ -1,0 +1,84 @@
+﻿@model FaceRecognition.Models.ImageDetailModel 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+<style>
+    div#pop-up {
+        display: none;
+        position: absolute;
+        width: 280px;
+        padding: 10px;
+        background: #eeeeee;
+        color: #000000;
+        border: 1px solid #1a1a1a;
+        font-size: 90%;
+    }
+</style>
+<script>
+    $(function () {
+        var moveLeft = 20;
+        var moveDown = 10;
+
+        $('#faceimage').mousemove(function (e) {
+           
+            var offset = $(this).offset();
+            var X = (e.pageX - offset.left);
+            var Y = (e.pageY - offset.top);
+            $.ajax({
+                url: '@Url.Action("FaceRecognitionResult", "Home")',
+                contentType: "application/json; charset=utf-8",
+                datatype: "json",
+                Type: "GET",
+                data: { xcoordinate: X, ycoordinate: Y },
+                success: function (response) {
+                    if (response != "") {
+                        $('div#pop-up').show();
+                        $("div#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+                        $('#p-pop-up').html(response);
+                    }
+                    else {
+                        $('div#pop-up').hide();
+                    }
+                },
+                error: function (response) {
+                  
+                }
+            });
+
+           
+        });
+
+    });
+</script>
+
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="UploadFile">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload one or more files using this form:</p>
+            <input type="file" name="file" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Upload" />
+        </div>
+    </div>
+    <div>
+
+        @{
+            if (Model != null)
+            {
+                <div class="col-md-4">
+                    <img id="faceimage" src="~/images/@Model.m_imageurl"/>
+                </div>
+                <div id="pop-up">
+                    <p id="p-pop-up">
+                    
+                    </p>
+                </div>
+            }
+        }
+    </div>
+</form>

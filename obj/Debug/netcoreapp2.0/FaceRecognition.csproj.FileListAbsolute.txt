@@ -1,0 +1,11 @@
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\bin\Debug\netcoreapp2.0\FaceRecognition.deps.json
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\bin\Debug\netcoreapp2.0\FaceRecognition.runtimeconfig.json
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\bin\Debug\netcoreapp2.0\FaceRecognition.runtimeconfig.dev.json
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\bin\Debug\netcoreapp2.0\FaceRecognition.dll
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\bin\Debug\netcoreapp2.0\FaceRecognition.pdb
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\obj\Debug\netcoreapp2.0\FaceRecognition.csprojAssemblyReference.cache
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\obj\Debug\netcoreapp2.0\FaceRecognition.csproj.CoreCompileInputs.cache
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\obj\Debug\netcoreapp2.0\FaceRecognition.AssemblyInfoInputs.cache
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\obj\Debug\netcoreapp2.0\FaceRecognition.AssemblyInfo.cs
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\obj\Debug\netcoreapp2.0\FaceRecognition.dll
+C:\TC\Applications\SampleProjects\FaceRecognition\FaceRecognition\FaceRecognition\obj\Debug\netcoreapp2.0\FaceRecognition.pdb
